@@ -37,12 +37,12 @@ jobs:
         with:
           name: results
           path: results
-          
+
       - uses: actions/checkout@v2
       - name: Download reports
         uses: actions/download-artifact@v1
         with:
-          name: reports
+          name: results
       - name: Send report to commit
         uses: joonvena/robotframework-reporter-action@v2.1
         with:
