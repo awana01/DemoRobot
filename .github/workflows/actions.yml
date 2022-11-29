@@ -30,7 +30,7 @@ jobs:
       - name: Test with pytest
         run: |
           robot -d Results/  ./Tests/*Test*.robot
-  generate_report:
+  # generate_report:
   
     steps:
       - uses: actions/checkout@v2
