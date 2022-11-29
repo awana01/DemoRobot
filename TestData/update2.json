@@ -1,0 +1,57 @@
+{
+    "userdetails": [
+        {
+            "name": "max",
+            "email": "max1234@yopmail.com"
+        },
+        {
+            "name": "Steve",
+            "email": "nikhil@geeksforgeeks.org"
+        },
+        {
+            "name": "Mary",
+            "email": "nikhil@geeksforgeeks.org",
+            "Created_On": "2022-11-28"
+        },
+        {
+            "name": "Desiree",
+            "email": "nikhil@geeksforgeeks.org",
+            "Created_On": "Mon-Nov-2022-11-28_22:24:01"
+        },
+        {
+            "name": "Daniel",
+            "email": "nikhil@geeksforgeeks.org",
+            "Created_On": "2022-11-28_22:25:30-PM"
+        },
+        {
+            "name": "Crystal",
+            "email": "nikhil@geeksforgeeks.org",
+            "Created_On": "2022-11-28_10:27:11-PM"
+        },
+        {
+            "name": "Breanna",
+            "email": "nikhil@geeksforgeeks.org",
+            "Created_On": "2022-11-28_10:44:43-PM"
+        },
+        {
+            "name": "Brandy",
+            "email": "nikhil@geeksforgeeks.org",
+            "Created_On": "2022-11-28_10:45:09-PM"
+        },
+        {
+            "name": "Eric",
+            "email": "nikhil@geeksforgeeks.org",
+            "Created_On": "2022-11-28_10:45:30-PM"
+        },
+        {
+            "name": "Susan",
+            "email": "nikhil@geeksforgeeks.org",
+            "Created_On": "2022-11-28_10:46:34-PM"
+        },
+        {
+            "name": "Courtney",
+            "email": "nikhil@geeksforgeeks.org",
+            "Created_On": "2022-11-28_10:46:51-PM"
+        }
+    ]
+}

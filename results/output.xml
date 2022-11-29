@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.6 on win32)" generated="20221129 12:06:50.938" rpa="false" schemaversion="3">
+<suite id="s1" name="JsonProject01" source="E:\Python\py2022\JsonProject01">
+<suite id="s1-s1" name="Tests" source="E:\Python\py2022\JsonProject01\Tests">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
+<arg>Before All Setups</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221129 12:06:50.979" endtime="20221129 12:06:50.980"/>
+</kw>
+<suite id="s1-s1-s1" name="Temptest01" source="E:\Python\py2022\JsonProject01\Tests\temptest01.robot">
+<test id="s1-s1-s1-t1" name="Test with templete iteration1" line="7">
+<kw name="Run test for 1" sourcename="Run test for ${iteration}">
+<kw name="Evaluate" library="BuiltIn">
+<var>${result}</var>
+<arg>type(${iteration})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20221129 12:06:50.990" level="INFO">${result} = &lt;class 'int'&gt;</msg>
+<status status="PASS" starttime="20221129 12:06:50.988" endtime="20221129 12:06:50.991"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221129 12:06:50.992" endtime="20221129 12:06:50.993"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>iter:${iteration}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221129 12:06:50.994" endtime="20221129 12:06:50.996"/>
+</kw>
+<status status="PASS" starttime="20221129 12:06:50.988" endtime="20221129 12:06:50.996"/>
+</kw>
+<kw name="Run test for 2" sourcename="Run test for ${iteration}">
+<kw name="Evaluate" library="BuiltIn">
+<var>${result}</var>
+<arg>type(${iteration})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20221129 12:06:50.999" level="INFO">${result} = &lt;class 'int'&gt;</msg>
+<status status="PASS" starttime="20221129 12:06:50.998" endtime="20221129 12:06:50.999"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221129 12:06:51.000" endtime="20221129 12:06:51.001"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>iter:${iteration}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221129 12:06:51.002" endtime="20221129 12:06:51.003"/>
+</kw>
+<status status="PASS" starttime="20221129 12:06:50.997" endtime="20221129 12:06:51.003"/>
+</kw>
+<kw name="Run test for 3" sourcename="Run test for ${iteration}">
+<kw name="Evaluate" library="BuiltIn">
+<var>${result}</var>
+<arg>type(${iteration})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20221129 12:06:51.007" level="INFO">${result} = &lt;class 'int'&gt;</msg>
+<status status="PASS" starttime="20221129 12:06:51.005" endtime="20221129 12:06:51.008"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221129 12:06:51.008" endtime="20221129 12:06:51.010"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>iter:${iteration}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221129 12:06:51.011" endtime="20221129 12:06:51.012"/>
+</kw>
+<status status="PASS" starttime="20221129 12:06:51.004" endtime="20221129 12:06:51.013"/>
+</kw>
+<status status="PASS" starttime="20221129 12:06:50.986" endtime="20221129 12:06:51.014"/>
+</test>
+<test id="s1-s1-s1-t2" name="Test multi keywords" line="12">
+<kw name="Try some keywords" type="SETUP">
+<kw name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" starttime="20221129 12:06:51.018" endtime="20221129 12:06:51.018"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nHello py0</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221129 12:06:51.019" endtime="20221129 12:06:51.020"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Hello py1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221129 12:06:51.020" endtime="20221129 12:06:51.021"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Hello py2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221129 12:06:51.021" endtime="20221129 12:06:51.022"/>
+</kw>
+<status status="PASS" starttime="20221129 12:06:51.017" endtime="20221129 12:06:51.023"/>
+</kw>
+<kw name="Hello world">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Hello World</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221129 12:06:51.026" endtime="20221129 12:06:51.027"/>
+</kw>
+<status status="PASS" starttime="20221129 12:06:51.024" endtime="20221129 12:06:51.027"/>
+</kw>
+<status status="PASS" starttime="20221129 12:06:51.016" endtime="20221129 12:06:51.028"/>
+</test>
+<status status="PASS" starttime="20221129 12:06:50.980" endtime="20221129 12:06:51.032"/>
+</suite>
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
+<arg>After All Setups</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221129 12:06:51.035" endtime="20221129 12:06:51.036"/>
+</kw>
+<status status="PASS" starttime="20221129 12:06:50.974" endtime="20221129 12:06:51.037"/>
+</suite>
+<status status="PASS" starttime="20221129 12:06:50.944" endtime="20221129 12:06:51.041"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="JsonProject01">JsonProject01</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Tests">JsonProject01.Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1" name="Temptest01">JsonProject01.Tests.Temptest01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
