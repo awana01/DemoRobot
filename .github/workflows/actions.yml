@@ -31,13 +31,7 @@ jobs:
         run: |
           robot -d Results/  ./Tests/*Test*.robot
       
-      - name: Upload reports
-          uses: actions/upload-artifact@v3
-          if: always()
-          with:
-            name: reports
-            # set path to Robot Framework results reports. Exclude dummy file that is needed because of ppodgorsek image priviledges.
-            path: ${{ github.workspace }}/reports
+      
       
     # test:
     #   runs-on: windows-latest
@@ -52,20 +46,20 @@ jobs:
     #         name: reports
     #         path: reports
     
-    # generate_report:
-    #   if: always()
-    #   needs: [test] 
-    #   runs-on: windows-latest
-    #   steps:
-    #     - uses: actions/checkout@v2
-    #     - name: Download reports
-    #       uses: actions/download-artifact@v1
-    #       with:
-    #         name: reports
-    #     - name: Send report to commit
-    #       uses: joonvena/robotframework-reporter-action@v2.1
-    #       with:
-    #         gh_access_token: ${{ secrets.GITHUB_TOKEN }}
+  generate_report:
+    if: always()
+    needs: [build] 
+    runs-on: windows-latest
+      steps:
+        - uses: actions/checkout@v2
+        - name: Download reports
+          uses: actions/download-artifact@v1
+          with:
+            name: reports
+        - name: Send report to commit
+          uses: joonvena/robotframework-reporter-action@v2.1
+          with:
+            gh_access_token: ${{ secrets.GITHUB_TOKEN }}
 
 
 
