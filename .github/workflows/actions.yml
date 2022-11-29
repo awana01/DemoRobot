@@ -32,7 +32,6 @@ jobs:
           robot -d Results/  ./Tests/*Test*.robot
   # generate_report:
   
-    steps:
       - uses: actions/checkout@v2
       - name: Download reports
         uses: actions/download-artifact@v1
