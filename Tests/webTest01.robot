@@ -25,7 +25,8 @@ Enter search data
   @{chrome_options}  Create List    
   open chrome browser      https://www.google.com/
   ...              chrome
-  ...              --disable-infobar  --window-size=900,600   --disable-blink-features=AutomationControlled  --disable-extensions
+  ...              --headless  --no-sandbox   --disable-extensions  --disable-gpu
+  #--disable-infobar  --window-size=900,600   --disable-blink-features=AutomationControlled  --disable-extensions 
   Click Element    name:q
   Input Text       name:q     Github Actions\n
   Sleep     3s
