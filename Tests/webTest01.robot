@@ -32,3 +32,4 @@ Enter search data
   ${size_dict}     Get Window Size
   Log To Console   ${size_dict} 
   Set Window Size  width=902    height=800
+  Capture Page Screenshot   EMBED
