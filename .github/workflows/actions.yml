@@ -30,7 +30,18 @@ jobs:
       - name: Test with pytest
         run: |
           robot -d Results/  ./Tests/*Test*.robot
-      
+  generate_report:
+  
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download reports
+        uses: actions/download-artifact@v1
+        with:
+          name: reports
+      - name: Send report to commit
+        uses: joonvena/robotframework-reporter-action@v2.1
+        with:
+          gh_access_token: ${{ secrets.GITHUB_TOKEN }}    
       
       
     # test:
@@ -46,20 +57,20 @@ jobs:
     #         name: reports
     #         path: reports
     
-  generate_report:
-    if: always()
-    needs: [build] 
-    runs-on: windows-latest
-      steps:
-        - uses: actions/checkout@v2
-        - name: Download reports
-          uses: actions/download-artifact@v1
-          with:
-            name: reports
-        - name: Send report to commit
-          uses: joonvena/robotframework-reporter-action@v2.1
-          with:
-            gh_access_token: ${{ secrets.GITHUB_TOKEN }}
+  # generate_report:
+  #   if: always()
+  #   needs: [build] 
+  #   runs-on: windows-latest
+  #     steps:
+  #       - uses: actions/checkout@v2
+  #       - name: Download reports
+  #         uses: actions/download-artifact@v1
+  #         with:
+  #           name: reports
+  #       - name: Send report to commit
+  #         uses: joonvena/robotframework-reporter-action@v2.1
+  #         with:
+  #           gh_access_token: ${{ secrets.GITHUB_TOKEN }}
 
 
 
